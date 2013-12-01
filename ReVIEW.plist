@@ -53,7 +53,20 @@
 	<key>numbersArray</key>
 	<array/>
 	<key>outlineMenuArray</key>
-	<array/>
+	<array>
+		<dict>
+			<key>beginString</key>
+			<string>^={1,5}.+</string>
+			<key>bold</key>
+			<true/>
+			<key>ignoreCase</key>
+			<false/>
+			<key>italic</key>
+			<false/>
+			<key>underline</key>
+			<false/>
+		</dict>
+	</array>
 	<key>stringsArray</key>
 	<array>
 		<dict>
