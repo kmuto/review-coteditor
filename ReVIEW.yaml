@@ -40,7 +40,8 @@ outlineMenu:
 numbers: []
 metadata:
   version: "2.0"
-  lastModified: "2014-10-16"
+  lastModified: "2014-10-26"
+  license: "Modified BSD License"
   author: "kmuto"
   description: "contributed by udzura and 1024jp"
   distributionURL: "https://github.com/kmuto/review-coteditor"
