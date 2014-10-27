@@ -1,0 +1,83 @@
+extensions:
+- keyString: "re"
+comments: []
+outlineMenu:
+- beginString: "^=([^=].*)"
+  bold: true
+  ignoreCase: false
+  italic: false
+  underline: false
+  keyString: "$1"
+- beginString: "^==([^=].*)"
+  keyString: "    $1"
+- beginString: "^===([^=].*)"
+  keyString: "        $1"
+- beginString: "^====([^=].*)"
+  keyString: "            $1"
+- beginString: "^=====([^=].*)"
+  keyString: "                $1"
+- beginString: "^======([^=].*)"
+  keyString: "                    $1"
+- beginString: "^======\\[column\\](.+)"
+  underline: true
+  keyString: "                    $1"
+- beginString: "^=====\\[column\\](.+)"
+  underline: true
+  keyString: "                $1"
+- beginString: "^====\\[column\\](.+)"
+  underline: true
+  keyString: "            $1"
+- beginString: "^===\\[column\\](.+)"
+  underline: true
+  keyString: "        $1"
+- beginString: "^==\\[column\\](.+)"
+  underline: true
+  keyString: "    $1"
+- beginString: "^=\\[column\\](.+)"
+  bold: true
+  underline: true
+  keyString: "$1"
+numbers: []
+metadata:
+  version: "2.0"
+  lastModified: "2014-10-26"
+  license: "Modified BSD License"
+  author: "kmuto"
+  description: "contributed by udzura and 1024jp"
+  distributionURL: "https://github.com/kmuto/review-coteditor"
+commands:
+- beginString: "\\/\\/.*\\{"
+  regularExpression: true
+  endString: "\\/\\/\\}"
+- beginString: "\\/\\/[a-z]+\\[.*\\]$"
+  regularExpression: true
+  endString: "$"
+values: []
+keywords:
+- beginString: "^\\s*:\\s"
+  regularExpression: true
+- beginString: "^\\s*\\*+\\s"
+  regularExpression: true
+- beginString: "^\\s*\\d+\\.\\s"
+  regularExpression: true
+attributes:
+- beginString: "#@mapfile"
+  endString: "#@end"
+- beginString: "#@mapoutput"
+  endString: "#@end"
+- beginString: "#@maprange"
+  endString: "#@end"
+- beginString: "#@provide"
+- beginString: "#@require"
+- beginString: "#@warn"
+strings:
+- beginString: "@<"
+  endString: "}"
+types:
+- beginString: "=.*"
+  regularExpression: true
+  endString: "$"
+commentDelimiters:
+  inlineDelimiter: "#@#"
+characters: []
+completions: []
